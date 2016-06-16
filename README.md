@@ -83,6 +83,7 @@ If you discover any security related issues, please email johndavedecano@gmail.c
 
 ## Credits
 - John Dave Decano http://johndavedecano.me
+- Remi Lanvin https://github.com/rlanvin
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
