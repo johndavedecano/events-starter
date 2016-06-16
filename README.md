@@ -15,15 +15,15 @@ php artisan migrate --path=vendor/jdecano/events-starter/database/migrations
 
 ## Basic Usage
 
-title - Title of the event
-description - Description of the event
-date - A php date to when the event will take place
-frequency - yearly, monthly, weekly, daily
-interval - The interval between each FREQUENCY iteration. For example, when using YEARLY, an interval of 2 means once every two years, but with HOURLY, it means once every two hours. Default is 1.
-type - by_date or by_count. If you use by_date generation of occurrences will be based on until. If you use by_count generation of occurrences will be on count.
-count - How many occurrences will be generated.
-until - The limit of the recurrence. Accepts the same formats as DTSTART. If a recurrence instance happens to be the same the date given, this will be the last occurrence
-weekdays -The day(s) of the week to apply the recurrence to from MO (Monday) to SU (Sunday). Must be one of the following strings: MO, TU, WE, TH, FR, SA, SU. It can be a single value, or a comma-separated list or an array
+1. title - Title of the event
+2. description - Description of the event
+3. date - A php date to when the event will take place
+4. frequency - yearly, monthly, weekly, daily
+5. interval - The interval between each FREQUENCY iteration. For example, when using YEARLY, an interval of 2 means once every two years, but with HOURLY, it means once every two hours. Default is 1.
+6. type - by_date or by_count. If you use by_date generation of occurrences will be based on until. If you use by_count generation of occurrences will be on count.
+7. count - How many occurrences will be generated.
+8. until - The limit of the recurrence. Accepts the same formats as DTSTART. If a recurrence instance happens to be the same the date given, this will be the last occurrence
+9. weekdays -The day(s) of the week to apply the recurrence to from MO (Monday) to SU (Sunday). Must be one of the following strings: MO, TU, WE, TH, FR, SA, SU. It can be a single value, or a comma-separated list or an array
 ```
 $event = RecurringEvent::create([
 	'title'             => 'My Event Title',
